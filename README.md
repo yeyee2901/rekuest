@@ -11,32 +11,32 @@ I have provided many common options. Have any advices? Just make a PR
 package main
 
 import (
-    "github.com/yeyee2901/httprequest"
+    "github.com/yeyee2901/rekuest"
 )
 
 func main() {
     ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
     defer cancel()
 
-    httpStatus, err := request.HTTPRequest(
+    httpStatus, err := rekuest.HTTPRequest(
         method, host+endpoint, nil,
-        request.WithContext(ctx),
-        request.WithCustomHTTPClient(new(http.Client)),
+        rekuest.WithContext(ctx),
+        rekuest.WithCustomHTTPClient(new(http.Client)),
 
-        request.WithHeader("Authorization", "Bearer <some_token>"),
+        rekuest.WithHeader("Authorization", "Bearer <some_token>"),
 
         // query string
-        request.WithQuery(key1, val1),
-        request.WithQuery(key2, val2),
-        request.WithQuery(key3, val3),
-        request.WithQuery(key4, val4),
+        rekuest.WithQuery(key1, val1),
+        rekuest.WithQuery(key2, val2),
+        rekuest.WithQuery(key3, val3),
+        rekuest.WithQuery(key4, val4),
 
         // dump request & response
-        request.WithResponseDump(os.Stdout),
-        request.WithRequestDump(os.Stdout),
+        rekuest.WithResponseDump(os.Stdout),
+        rekuest.WithRequestDump(os.Stdout),
 
         // body payload
-        request.WithJSON(jsonPayload),
+        rekuest.WithJSON(jsonPayload),
     )
 
     if err != nil {
