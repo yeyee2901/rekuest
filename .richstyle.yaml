@@ -1,0 +1,14 @@
+startStyle:
+  foreground: '#909090'
+passStyle:
+  bold: true
+  foreground: green
+failStyle:
+  bold: true
+  foreground: red
+skipStyle:
+  foreground: black
+passPackageStyle:
+  hide: true
+failPackageStyle:
+  hide: true

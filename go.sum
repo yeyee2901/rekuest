@@ -1,0 +1,4 @@
+github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/yeyee2901/httprequest v1.0.4 h1:ZUfyjl7bS2Y168lmwMwpMewIA/J+YHYrlxH71tVlPoU=
+github.com/yeyee2901/httprequest v1.0.4/go.mod h1:6nk+eKid2kKe+2rc2VscphMeDO/t/+67H+f1teSqH0U=
